@@ -1,0 +1,43 @@
+.header_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 10vh;
+
+  margin: 0 2rem;
+  padding: 1rem;
+
+  border-bottom: 1px solid var(--blue-100);
+}
+
+.header_content {
+  display: flex;
+}
+
+.header_content_menu {
+  display: flex;
+  align-items: center;
+}
+
+.header_content_menu a {
+  color: var(--blue-100);
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.header_content_download_button {
+  display: flex;
+
+  background: transparent;
+  color: var(--blue-100);
+
+  border: 1px solid var(--blue-100);
+  border-radius: 1rem;
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.header_content_download_button :hover {
+  filter: brightness(0.8);
+}
