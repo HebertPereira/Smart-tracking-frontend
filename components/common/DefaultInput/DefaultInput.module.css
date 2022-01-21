@@ -1,0 +1,24 @@
+.defaultInput_container {
+  display: flex;
+  width: 100%;
+
+  border: 1px solid var(--blue-100);
+  border-radius: 0.5rem;
+
+  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+}
+
+.defaultInput_input {
+  width: 100%;
+
+  background-color: transparent;
+  color: var(--white);
+
+  border: 0;
+  outline: none;
+}
+
+.defaultInput_input::placeholder {
+  color: var(--blue-200);
+}

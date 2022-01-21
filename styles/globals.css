@@ -7,6 +7,7 @@ body {
 }
 :root {
   --blue-100: #c5feed;
+  --blue-200: #a5d7d3;
   --blue-500: #273b69;
   --blue-900: #101f42;
 
@@ -21,6 +22,19 @@ a {
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  box-shadow: 0 0 0 30px #273b69 inset;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 .container {

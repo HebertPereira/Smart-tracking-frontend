@@ -1,0 +1,14 @@
+.defaultButton_container {
+  width: 100%;
+
+  background-color: var(--blue-200);
+
+  padding: 0.5rem 1rem;
+
+  border: 0;
+  border-radius: 1rem;
+
+  cursor: pointer;
+
+  font-size: clamp(0.4rem, 0.5vw + 0.45rem, 2rem);
+}

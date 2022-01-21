@@ -7,6 +7,9 @@ import styles from '../styles/Home.module.css';
 import IntegrationIcon from '../assets/icons/integrationIcon.svg';
 import CompassIcon from '../assets/icons/compassIcon.svg';
 import MedalIcon from '../assets/icons/medalIcon.svg';
+import DefaultInput from '../components/common/DefaultInput/DefaultInput';
+import DefaultButton from '../components/common/DefaultButton/DefaultButton';
+import MASKS from '../utils/masks';
 
 const Home: NextPage = () => {
   return (
@@ -26,8 +29,38 @@ const Home: NextPage = () => {
               Integramos com inúmeras plataformas, e você só se preocupa em fornecer o código de rastreio do seu pacote.
             </strong>
           </div>
-          <div>
-            asddadda
+          <div className={styles.home_tracking_container}>
+            <div className={styles.home_tracking_content}>
+              <h1 className={styles.home_tracking_content_title}>
+                Localizar pacote
+              </h1>
+              <div className={styles.home_tracking_content_search}>
+                <div>
+                  <DefaultInput
+                    text="Nome completo"
+                    name="name"
+                  />
+                  <div className={styles.home_tracking_content_row}>
+                    <DefaultInput
+                      text="Código de rastreio"
+                      name="tracking-code"
+                    />
+                    <DefaultInput
+                      text="CPF"
+                      name="cpf"
+                      mask={MASKS.cpf}
+                    />
+                  </div>
+                  <DefaultInput
+                    text="Nº Nota fiscal"
+                    name="number-code"
+                  />
+                </div>
+                <DefaultButton
+                  text="Rastrear pacote"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.home_footer}>
