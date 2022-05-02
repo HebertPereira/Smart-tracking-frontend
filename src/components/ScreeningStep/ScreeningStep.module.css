@@ -1,0 +1,32 @@
+.tracking_route_itemBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--white);
+
+  border-radius: 1rem;
+
+  padding: 0.5rem;
+
+  box-shadow: 2px 4px 1px #c1c1c1;
+}
+
+.tracking_route_itemBox_infoRow {
+  display: flex;
+  align-items: center;
+}
+
+.tracking_route_itemBox_infoRow svg {
+  margin-right: 0.5rem;
+}
+
+.tracking_route_itemBox_textBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.tracking_route_itemBox_textBox span {
+  width: 100%;
+  max-width: 20vw;
+}

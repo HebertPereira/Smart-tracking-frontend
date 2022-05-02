@@ -1,0 +1,44 @@
+.tracking_address_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 30vw;
+  height: 100%;
+
+  background-color: var(--blue-900);
+
+  border-radius: 2rem;
+
+  padding: 0.5rem;
+}
+
+.tracking_address_content_title {
+  font-size: clamp(0.4rem, 0.8vw + 0.7rem, 2rem);
+  font-weight: 600;
+
+  color: var(--white);
+}
+
+.tracking_address_content_search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--blue-500);
+
+  border-radius: 2rem;
+
+  padding: 0.5rem 1rem;
+  padding-bottom: 3vh;
+}
+
+.tracking_address_content_row {
+  display: flex;
+}
+
+.tracking_address_content_row div + div {
+  margin-left: 1rem;
+}
